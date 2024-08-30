@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carteira-digital</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+
+    <style>
+
+        
+        .style-0 {
+            cursor: auto;
+            font-weight: 400;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            margin: 0px;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(33, 37, 41);
+            text-align: left;
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+        }
+
+        .style-1 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+        }
+
+        .style-2 {
+            max-width: 1140px;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+        }
+
+        .style-3 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            box-sizing: border-box;
+        }
+
+        .style-4 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            -webkit-box-flex: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-5 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            box-sizing: border-box;
+        }
+
+        .style-6 {
+            padding: 48px;
+            -webkit-box-flex: 0;
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            position: relative;
+            width: 100%;
+            padding-right: 48px;
+            padding-left: 48px;
+            box-sizing: border-box;
+        }
+
+        .style-7 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 0px;
+            margin-bottom: 8px;
+            box-sizing: border-box;
+        }
+
+        .style-8 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            border-style: none;
+            box-sizing: border-box;
+            width: 284px;
+        }
+
+        .style-9 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+        }
+
+        .style-10 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+        }
+
+        .style-11 {
+            max-width: 1140px;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+        }
+
+        .style-12 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+        }
+
+        .style-13 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            -webkit-box-flex: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-14 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            box-sizing: border-box;
+        }
+
+        .style-15 {
+            -webkit-box-flex: 0;
+            flex: 0 0 50%;
+            max-width: 50%;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            background-color: rgb(248, 249, 250);
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-16 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            width: 100% !important;
+            box-sizing: border-box;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            display: inline-block;
+            position: relative;
+            text-align: left;
+        }
+
+        .style-17 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .style-18 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: baseline;
+            width: 100%;
+        }
+
+        .style-19 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding: 7px 0px;
+            border-top: 13px solid rgba(0, 0, 0, 0);
+            display: block;
+            position: relative;
+            flex: 1 1 auto;
+            min-width: 0px;
+        }
+
+        .style-20 {
+            color: rgb(28, 28, 28);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(28, 28, 28) none 0px;
+            overflow: clip;
+            margin: -1px 0px 0px;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            line-height: 18px;
+            box-sizing: border-box;
+            margin-top: -1px;
+            background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+            border: 0px none rgb(28, 28, 28);
+            padding: 0px;
+            width: 100%;
+            max-width: 100%;
+            vertical-align: bottom;
+        }
+
+        .style-21 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: content-box;
+            top: -13.5px;
+            padding-top: 13.5px;
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 32px;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .style-22 {
+            color: rgb(153, 153, 153);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(153, 153, 153) none 0px;
+            display: block;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+            top: 20.5px;
+            transform: matrix3d(0.75, 0, 0, 0, 0, 0.75, 0, 0, 0, 0.205, 1, -0.01, 0, -20.4998, 0.001, 0.99999);
+            width: 133.333%;
+            position: absolute;
+            left: 0px;
+            pointer-events: none;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transform-origin: 0px 0px;
+        }
+
+        .style-23 {
+            background-color: rgb(153, 153, 153);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 0px, rgba(0, 0, 0, 0.42) 33%, rgba(0, 0, 0, 0) 0px);
+            background-size: 4px 1px;
+            background-repeat: repeat-x;
+            bottom: 20px;
+            background-position: 0px 50%;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+        }
+
+        .style-24 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            background-color: rgb(63, 81, 181);
+            position: absolute;
+            height: 1px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            transform-origin: 262.5px 0.5px;
+            transform: matrix(0.5, 0, 0, 1, 0, 0);
+            visibility: hidden;
+        }
+
+        .style-25 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            font-size: 12px;
+            margin-top: 6.50004px;
+            top: 44.9844px;
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .style-26 {
+            opacity: 1;
+            transform: translateY(0%);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .style-27 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            flex: 1 0 12px;
+        }
+
+        .style-28 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            -webkit-box-flex: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-29 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            box-sizing: border-box;
+        }
+
+        .style-30 {
+            -webkit-box-flex: 0;
+            flex: 0 0 50%;
+            max-width: 50%;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            display: flex;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-31 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            -webkit-box-flex: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-32 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            box-sizing: border-box;
+        }
+
+        .style-33 {
+            -webkit-box-flex: 0;
+            flex: 0 0 66.6667%;
+            max-width: 66.6667%;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            background-color: rgb(248, 249, 250);
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-34 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            box-sizing: border-box;
+        }
+
+        .style-35 {
+            -webkit-box-flex: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-36 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            width: 100% !important;
+            box-sizing: border-box;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            display: inline-block;
+            position: relative;
+            text-align: left;
+        }
+
+        .style-37 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .style-38 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: baseline;
+            width: 100%;
+        }
+
+        .style-39 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding: 7px 0px;
+            border-top: 13px solid rgba(0, 0, 0, 0);
+            display: block;
+            position: relative;
+            flex: 1 1 auto;
+            min-width: 0px;
+        }
+
+        .style-40 {
+        color: rgb(0, 69, 124);
+        transition: 0.7s;
+        -webkit-font-smoothing: antialiased;
+        outline: rgb(0, 69, 124) none 0px;
+        overflow: clip;
+        margin: -1px 0px 0px;
+        font-family: Roboto, 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        box-sizing: border-box;
+        margin-top: -1px;
+        background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+        border: 0px none rgb(0, 69, 124);
+        padding: 0px;
+        width: 100%;
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+
+        .style-41 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: content-box;
+            top: -13.5px;
+            padding-top: 13.5px;
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 32px;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .style-42 {
+            color: rgb(153, 153, 153);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(153, 153, 153) none 0px;
+            display: block;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+            top: 20.5px;
+            transform: matrix3d(0.75, 0, 0, 0, 0, 0.75, 0, 0, 0, 0.205, 1, -0.01, 0, -20.4998, 0.001, 0.99999);
+            width: 133.333%;
+            position: absolute;
+            left: 0px;
+            pointer-events: none;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transform-origin: 0px 0px;
+        }
+
+        .style-43 {
+            background-color: rgba(0, 69, 124, 0.42);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            bottom: 20px;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+        }
+
+        .style-44 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            background-color: rgb(63, 81, 181);
+            position: absolute;
+            height: 1px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            transform-origin: 355px 0.5px;
+            transform: matrix(0.5, 0, 0, 1, 0, 0);
+            visibility: hidden;
+        }
+
+        .style-45 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            font-size: 12px;
+            margin-top: 6.50004px;
+            top: 44.9844px;
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .style-46 {
+            opacity: 1;
+            transform: translateY(0%);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .style-47 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            flex: 1 0 12px;
+        }
+
+        .style-48 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            box-sizing: border-box;
+        }
+
+        .style-49 {
+            -webkit-box-flex: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-50 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            width: 100% !important;
+            box-sizing: border-box;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            display: inline-block;
+            position: relative;
+            text-align: left;
+        }
+
+        .style-51 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .style-52 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: baseline;
+            width: 100%;
+        }
+
+        .style-53 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding: 7px 0px;
+            border-top: 13px solid rgba(0, 0, 0, 0);
+            display: block;
+            position: relative;
+            flex: 1 1 auto;
+            min-width: 0px;
+        }
+
+        .style-54 {
+            color: rgb(0, 69, 124);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(0, 69, 124) none 0px;
+            overflow: clip;
+            margin: -1px 0px 0px;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            line-height: 18px;
+            box-sizing: border-box;
+            margin-top: -1px;
+            background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+            border: 0px none rgb(0, 69, 124);
+            padding: 0px;
+            width: 100%;
+            max-width: 100%;
+            vertical-align: bottom;
+        }
+
+        .style-55 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: content-box;
+            top: -13.5px;
+            padding-top: 13.5px;
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 32px;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .style-56 {
+            color: rgb(153, 153, 153);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(153, 153, 153) none 0px;
+            display: block;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+            top: 20.5px;
+            transform: matrix3d(0.75, 0, 0, 0, 0, 0.75, 0, 0, 0, 0.205, 1, -0.01, 0, -20.4998, 0.001, 0.99999);
+            width: 133.333%;
+            position: absolute;
+            left: 0px;
+            pointer-events: none;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transform-origin: 0px 0px;
+        }
+
+        .style-57 {
+            background-color: rgba(0, 69, 124, 0.42);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            bottom: 20px;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+        }
+
+        .style-58 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            background-color: rgb(63, 81, 181);
+            position: absolute;
+            height: 1px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            transform-origin: 355px 0.5px;
+            transform: matrix(0.5, 0, 0, 1, 0, 0);
+            visibility: hidden;
+        }
+
+        .style-59 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            font-size: 12px;
+            margin-top: 6.50004px;
+            top: 44.9844px;
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .style-60 {
+            opacity: 1;
+            transform: translateY(0%);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .style-61 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            flex: 1 0 12px;
+        }
+
+        .style-62 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            box-sizing: border-box;
+        }
+
+        .style-63 {
+            -webkit-box-flex: 0;
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-64 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            width: 100% !important;
+            box-sizing: border-box;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            display: inline-block;
+            position: relative;
+            text-align: left;
+        }
+
+        .style-65 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .style-66 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: baseline;
+            width: 100%;
+        }
+
+        .style-67 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding: 7px 0px;
+            border-top: 13px solid rgba(0, 0, 0, 0);
+            display: block;
+            position: relative;
+            flex: 1 1 auto;
+            min-width: 0px;
+        }
+
+        .style-68 {
+            color: rgb(0, 69, 124);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(0, 69, 124) none 0px;
+            overflow: clip;
+            margin: -1px 0px 0px;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            line-height: 18px;
+            box-sizing: border-box;
+            margin-top: -1px;
+            background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+            border: 0px none rgb(0, 69, 124);
+            padding: 0px;
+            width: 100%;
+            max-width: 100%;
+            vertical-align: bottom;
+        }
+
+        .style-69 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: content-box;
+            top: -13.5px;
+            padding-top: 13.5px;
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 32px;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .style-70 {
+            color: rgb(153, 153, 153);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(153, 153, 153) none 0px;
+            display: block;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+            top: 20.5px;
+            transform: matrix3d(0.75, 0, 0, 0, 0, 0.75, 0, 0, 0, 0.205, 1, -0.01, 0, -20.4998, 0.001, 0.99999);
+            width: 133.333%;
+            position: absolute;
+            left: 0px;
+            pointer-events: none;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transform-origin: 0px 0px;
+        }
+
+        .style-71 {
+            background-color: rgba(0, 69, 124, 0.42);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            bottom: 20px;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+        }
+
+        .style-72 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            background-color: rgb(63, 81, 181);
+            position: absolute;
+            height: 1px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            transform-origin: 108.328px 0.5px;
+            transform: matrix(0.5, 0, 0, 1, 0, 0);
+            visibility: hidden;
+        }
+
+        .style-73 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            font-size: 12px;
+            margin-top: 6.50004px;
+            top: 44.9844px;
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .style-74 {
+            opacity: 1;
+            transform: translateY(0%);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .style-75 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            flex: 1 0 12px;
+        }
+
+        .style-76 {
+            -webkit-box-flex: 0;
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-77 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            width: 100% !important;
+            box-sizing: border-box;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            display: inline-block;
+            position: relative;
+            text-align: left;
+        }
+
+        .style-78 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .style-79 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: baseline;
+            width: 100%;
+        }
+
+        .style-80 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding: 7px 0px;
+            border-top: 13px solid rgba(0, 0, 0, 0);
+            display: block;
+            position: relative;
+            flex: 1 1 auto;
+            min-width: 0px;
+        }
+
+        .style-81 {
+            color: rgb(0, 69, 124);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(0, 69, 124) none 0px;
+            overflow: clip;
+            margin: -1px 0px 0px;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            line-height: 18px;
+            box-sizing: border-box;
+            margin-top: -1px;
+            background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+            border: 0px none rgb(0, 69, 124);
+            padding: 0px;
+            width: 100%;
+            max-width: 100%;
+            vertical-align: bottom;
+        }
+
+        .style-82 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: content-box;
+            top: -13.5px;
+            padding-top: 13.5px;
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 32px;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .style-83 {
+            color: rgb(153, 153, 153);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(153, 153, 153) none 0px;
+            display: block;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+            top: 20.5px;
+            transform: matrix3d(0.75, 0, 0, 0, 0, 0.75, 0, 0, 0, 0.205, 1, -0.01, 0, -20.4998, 0.001, 0.99999);
+            width: 133.333%;
+            position: absolute;
+            left: 0px;
+            pointer-events: none;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transform-origin: 0px 0px;
+        }
+
+        .style-84 {
+            background-color: rgba(0, 69, 124, 0.42);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            bottom: 20px;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+        }
+
+        .style-85 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            background-color: rgb(63, 81, 181);
+            position: absolute;
+            height: 1px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            transform-origin: 108.328px 0.5px;
+            transform: matrix(0.5, 0, 0, 1, 0, 0);
+            visibility: hidden;
+        }
+
+        .style-86 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            font-size: 12px;
+            margin-top: 6.50004px;
+            top: 44.9844px;
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .style-87 {
+            opacity: 1;
+            transform: translateY(0%);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .style-88 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            flex: 1 0 12px;
+        }
+
+        .style-89 {
+            -webkit-box-flex: 0;
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+
+        .style-90 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            width: 100% !important;
+            box-sizing: border-box;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            display: inline-block;
+            position: relative;
+            text-align: left;
+        }
+
+        .style-91 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .style-92 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: baseline;
+            width: 100%;
+        }
+
+        .style-93 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            padding: 7px 0px;
+            border-top: 13px solid rgba(0, 0, 0, 0);
+            display: block;
+            position: relative;
+            flex: 1 1 auto;
+            min-width: 0px;
+        }
+
+        .style-94 {
+            color: rgb(0, 69, 124);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(0, 69, 124) none 0px;
+            overflow: clip;
+            margin: -1px 0px 0px;
+            font-family: Roboto, 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            line-height: 18px;
+            box-sizing: border-box;
+            margin-top: -1px;
+            background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+            border: 0px none rgb(0, 69, 124);
+            padding: 0px;
+            width: 100%;
+            max-width: 100%;
+            vertical-align: bottom;
+        }
+
+        .style-95 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: content-box;
+            top: -13.5px;
+            padding-top: 13.5px;
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 32px;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .style-96 {
+            color: rgb(153, 153, 153);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(153, 153, 153) none 0px;
+            display: block;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+            top: 20.5px;
+            transform: matrix3d(0.75, 0, 0, 0, 0, 0.75, 0, 0, 0, 0.205, 1, -0.01, 0, -20.4998, 0.001, 0.99999);
+            width: 133.333%;
+            position: absolute;
+            left: 0px;
+            pointer-events: none;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            transform-origin: 0px 0px;
+        }
+
+        .style-97 {
+            background-color: rgba(0, 69, 124, 0.42);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            bottom: 20px;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+        }
+
+        .style-98 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            background-color: rgb(63, 81, 181);
+            position: absolute;
+            height: 1px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            transform-origin: 108.328px 0.5px;
+            transform: matrix(0.5, 0, 0, 1, 0, 0);
+            visibility: hidden;
+        }
+
+        .style-99 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            font-size: 12px;
+            margin-top: 6.50004px;
+            top: 44.9844px;
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .style-100 {
+            opacity: 1;
+            transform: translateY(0%);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .style-101 {
+            transition: 0.7s;
+            -webkit-font-smoothing: antialiased;
+            outline: rgb(33, 37, 41) none 0px;
+            box-sizing: border-box;
+            flex: 1 0 12px;
+        }
+    </style>
+</head>
+
+<body cz-shortcut-listen="true" class="style-0">
+    <app-root _nghost-c0="" ng-version="4.4.7" class="style-1">
+        <div _ngcontent-c0="" class="style-2">
+            <div _ngcontent-c0="" class="style-3">
+                <div _ngcontent-c0="" class="style-4">
+                    <div _ngcontent-c0="" class="style-5">
+                        <div _ngcontent-c0="" class="style-6">
+                            <h1 _ngcontent-c0="" class="style-7">
+                                <img _ngcontent-c0="" alt="Universidade Cruzeiro do Sul" class="style-8" src="https://novoportal.cruzeirodosul.edu.br/static/logos/educacional/flat/cruzeiro-edu.png" />
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <router-outlet _ngcontent-c0="" class="style-9"></router-outlet>
+        <app-verifica-carteirinha _nghost-c1="" class="style-10">
+            <div _ngcontent-c1="" class="style-11">
+                <form _ngcontent-c1="" novalidate="" class="style-12">
+                    <div _ngcontent-c1="" class="style-13">
+                        <div _ngcontent-c1="" class="style-14">
+                            <div _ngcontent-c1="" class="style-15">
+                                <mat-form-field _ngcontent-c1="" class="style-16" color="primary">
+                                    <div class="style-17">
+                                        <div class="style-18">
+                                            <!---->
+                                            <div class="style-19">
+                                                <input _ngcontent-c1="" class="style-20" formcontrolname="codValidacao" matinput="" name="codValidacao" placeholder="11Y1B2D977D" disabled="" aria-invalid="false" /> <span class="style-21">
+                                                    <!----><label class="style-22" for="codValidacao" aria-owns="codValidacao">Código de validação
+                                                        <!---->
+                                                    </label>
+                                                </span>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                        <div class="style-23"><span class="style-24"></span></div>
+                                        <div class="style-25">
+                                            <!---->
+                                            <!---->
+                                            <div class="style-26">
+                                                <!---->
+                                                <div class="style-27"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div _ngcontent-c1="" class="style-28">
+                        <div _ngcontent-c1="" class="style-29">
+                            <div _ngcontent-c1="" class="style-30">
+                            </div>
+                        </div>
+                    </div>
+                    <div _ngcontent-c1="" class="style-31">
+                        <div _ngcontent-c1="" class="style-32">
+                            <div _ngcontent-c1="" class="style-33">
+                                <div _ngcontent-c1="" class="style-34">
+                                    <div _ngcontent-c1="" class="style-35">
+                                        <mat-form-field _ngcontent-c1="" class="style-36" color="primary">
+                                            <div class="style-37">
+                                                <div class="style-38">
+                                                    <!---->
+                                                    <div class="style-39">
+                                                        <input _ngcontent-c1="" id="escrita-input" class="style-40" formcontrolname="nome" matinput="" name="nome" placeholder="VINICIUS FERNANDES MACHADO" readonly="" aria-invalid="false" /> <span class="style-41">
+                                                            <!----><label class="style-42" for="nome" aria-owns="nome">Nome
+                                                                <!---->
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                                <div class="style-43"><span class="style-44"></span></div>
+                                                <div class="style-45">
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="style-46">
+                                                        <!---->
+                                                        <div class="style-47"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div _ngcontent-c1="" class="style-48">
+                                    <div _ngcontent-c1="" class="style-49">
+                                        <mat-form-field _ngcontent-c1="" class="style-50" color="primary">
+                                            <div class="style-51">
+                                                <div class="style-52">
+                                                    <!---->
+                                                    <div class="style-53">
+                                                        <input _ngcontent-c1="" id="escrita-input" class="style-54" formcontrolname="curso" matinput="" name="curso" placeholder="LICENCIATURA EM HISTÓRIA" readonly="" aria-invalid="false" /> <span class="style-55">
+                                                            <!----><label class="style-56" for="curso" aria-owns="curso">Curso
+                                                                <!---->
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                                <div class="style-57"><span class="style-58"></span></div>
+                                                <div class="style-59">
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="style-60">
+                                                        <!---->
+                                                        <div class="style-61"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div _ngcontent-c1="" class="style-62">
+                                    <div _ngcontent-c1="" class="style-63">
+                                        <mat-form-field _ngcontent-c1="" class="style-64" color="primary">
+                                            <div class="style-65">
+                                                <div class="style-66">
+                                                    <!---->
+                                                    <div class="style-67">
+                                                        <input _ngcontent-c1="" id="escrita-input" class="style-68" formcontrolname="rgm" matinput="" name="rgm" placeholder="02203156-1" readonly="" aria-invalid="false" /> <span class="style-69">
+                                                            <!----><label class="style-70" for="rgm" aria-owns="rgm">RGM
+                                                                <!---->
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                                <div class="style-71"><span class="style-72"></span></div>
+                                                <div class="style-73">
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="style-74">
+                                                        <!---->
+                                                        <div class="style-75"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </mat-form-field>
+                                    </div>
+                                    <div _ngcontent-c1="" class="style-76">
+                                        <mat-form-field _ngcontent-c1="" class="style-77" color="primary">
+                                            <div class="style-78">
+                                                <div class="style-79">
+                                                    <!---->
+                                                    <div class="style-80">
+                                                        <input _ngcontent-c1="" id="escrita-input" class="style-81" formcontrolname="cpf" matinput="" name="cpf" placeholder="150.614.887-50" readonly="" aria-invalid="false" /> <span class="style-82">
+                                                            <!----><label class="style-83" for="cpf" aria-owns="cpf">CPF
+                                                                <!---->
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                                <div class="style-84"><span class="style-85"></span></div>
+                                                <div class="style-86">
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="style-87">
+                                                        <!---->
+                                                        <div class="style-88"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </mat-form-field>
+                                    </div>
+                                    <div _ngcontent-c1="" class="style-89">
+                                        <mat-form-field _ngcontent-c1="" class="style-90" color="primary">
+                                            <div class="style-91">
+                                                <div class="style-92">
+                                                    <!---->
+                                                    <div class="style-93">
+                                                        <input _ngcontent-c1="" id="escrita-input" class="style-94" formcontrolname="dataValid" matinput="" name="dataValid" placeholder="31/12/2025" readonly="" aria-invalid="false" /> <span class="style-95">
+                                                            <!----><label class="style-96" for="dataValid" aria-owns="dataValid">Data de validade
+                                                                <!---->
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <!---->
+                                                </div>
+                                                <div class="style-97"><span class="style-98"></span></div>
+                                                <div class="style-99">
+                                                    <!---->
+                                                    <!---->
+                                                    <div class="style-100">
+                                                        <!---->
+                                                        <div class="style-101"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </app-verifica-carteirinha>
+    </app-root>
+</body>
+
+</html>
